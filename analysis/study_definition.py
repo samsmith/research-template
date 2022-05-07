@@ -1,5 +1,28 @@
 from cohortextractor import StudyDefinition, patients, codelist, codelist_from_csv  # NOQA
 
+project = ProjectDefinition(
+    "I will follow all the rules": "[yes / no]",
+    Project={
+        "Project Title": “Differences in Vaccine Hesitancy Across Different Ethnic Groups”,
+        "Project Abstract": ”Comparing childhood vaccination rates pre and post COVID19…”,
+        "Project Url": “https://my.ac.uk/blah”,
+        "Funding Description": “UKRI”,
+        "Any Highly Sensitive Items and Why": “none”,
+    }
+    
+    Person={
+        "Email Address": "$environment_variable_so_not_in_a_file",
+        "Hi to the output checkers": “will send chocolate”,
+        "I have done the NHS Approved Researcher training": "[yes / no]",
+        "I have done all NHS AR additional modules for this data":  "[yes / no]",
+        "Ethical research, so must respect dissents" : "[yes / no]",
+        "<<organisational assurances>>": "[yes / no]",
+
+        "I have had my access to a different ONS/NHS/etc safe setting revoked": "[yes / no]"
+        "I am a terrorist (for the same reason as on immigration forms)": "[yes / no]"
+        "I am a criminal (whatever DARS currently asks)": "[yes / no]"
+    }
+)
 
 study = StudyDefinition(
     default_expectations={
